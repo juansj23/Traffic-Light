@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
 const Home = () => {
-	const[selectedColor,setSelectedColor] = useState ("");
+	const[color,setColor] = useState ("");
 	return (
 		<div className="traffic-ligth text-center">
 			<div className="top"></div>
 			<div className="container">
-			<div onClick={()=>setSelectedColor("red")} className={"circle red "+ ((selectedColor === "red") ? "ligth":"")}></div>
-			<div onClick={()=>setSelectedColor("yellow")} className={"circle yellow "+ ((selectedColor === "yellow") ? "ligth":"")}></div>
-			<div onClick={()=>setSelectedColor("green")} className={"circle green "+ ((selectedColor === "green") ? "ligth":"")}></div>
+			<div onClick={()=>setColor("red")} className={"circle red "+ ((color === "red") ? "ligth":"")}></div>
+			<div onClick={()=>setColor("yellow")} className={"circle yellow "+ ((color === "yellow") ? "ligth":"")}></div>
+			<div onClick={()=>setColor("green")} className={"circle green "+ ((color === "green") ? "ligth":"")}></div>
 			</div>
 		</div>
 	);
